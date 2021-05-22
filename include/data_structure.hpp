@@ -1,27 +1,37 @@
 #pragma once
 
-// Заголовочный файл с объявлением структуры данных
+#include <vector>
+#include <cmath>
+#include <list>
 
 namespace itis {
 
-  // Tip 1: объявите здесь необходимые структуры, функции, константы и прочее
-
-  // Пример: объявление константы времени компиляции в заголовочном файле
-  inline constexpr auto kStringConstant = "Hello, stranger!";
-
-  // Пример: объявление структуры с полями и методами
-  struct MyStructure {
-   public:
-    int size_{0};
-    int capacity_{0};
-    int* data_{nullptr};
-
-    // Tip 2: На начальном этапе разработки структуры данных можете определения методов задавать в
-    // заголовочном файле, как только работа будет завершена, можно будет оставить здесь только объявления.
-
-    int size() const {
-      return size_;
-    }
+  struct HeapNode {
+    int key, value;
+    HeapNode() : key(0), value(0){};
+    HeapNode(int node_key, int element) : key(node_key), value(element){};
   };
 
+  class BinaryHeap{
+   private:
+    std::vector<HeapNode> heap;
+    void swap(struct HeapNode &p1, struct HeapNode &p2);
+    int FindPosition(int node);
+    int GetParentNode(int node){return std::floor(node/2);};
+   public:
+    BinaryHeap(){heap.resize(1);};
+    BinaryHeap(int n){
+      heap.resize(n + 1);
+    }
+    // Min-Priority Queue
+    void MinHeapify(int node, int length);
+    void BuildMinHeap(std::vector<int> array);
+    void DecreaseKey(int node, int newKey);
+    void MinHeapInsert(int node, int key);
+    int ExtractMin();
+    int Minimum(){return heap[1].value;};
+
+    bool IsHeapEmpty(){return (heap.size()<=1);};
+
+  };
 }  // namespace itis
