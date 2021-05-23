@@ -61,7 +61,7 @@ git clone https://github.com/Algorithms-and-Data-Structures-2021/semester-work-p
 
 ```shell
 # переход в папку с проектом
-cd C:\Users\username\asd-projects\semester-work-template
+cd C:\Users\username\asd-projects\semester-work-prim-mst
 
 # создание папки для файлов сборки (чтобы не засорять папку с проектом) 
 mkdir -p build && cd build 
@@ -148,6 +148,8 @@ dataset/data/
 
 ## Источники
 
-_Список использованных при реализации структуры данных источников._
-
-_**Это не плагиат, это уважение чужого труда и помощь своим сокурсникам более подробно разобраться в теме.**_
+|  [e-maxx](https://e-maxx.ru/algo/mst_prim)                                                                                       |
+|  :---                                                                                                                            |
+|  [wikipedia](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9F%D1%80%D0%B8%D0%BC%D0%B0)      |
+|  [studopedia](https://studopedia.ru/3_53232_algoritm-prima.html)                                                                 |
+|  [Гугл диск](https://drive.google.com/drive/folders/1QdP5sfKVR--9La1cZpMYVQpgkrIEIrqT)                                           |
