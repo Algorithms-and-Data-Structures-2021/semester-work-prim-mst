@@ -1,8 +1,7 @@
-# Название семестровой работы
+# Алгоритм Прима
 
 [![CMake](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-prim-mst/actions/workflows/cmake.yml/badge.svg)](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-prim-mst/actions/workflows/cmake.yml)
 
-`Actions > CMake > ... > Create status badge`
 
 _Краткое описание семестрового проекта. Следует отразить информацию по следующим пунктам:_
 
@@ -14,10 +13,6 @@ _Краткое описание семестрового проекта. Сле
 - _Какая-то другая справочная информация о проекте._
 
 ## Команда "Stack Overflow"
-
-_Заполните таблицу с указанием вклада каждого из участников в проект._
-
-**Примечание**. Преподаватель может определить вклад любого из участников команды по истории коммитов.
 
 | Фамилия Имя        | Вклад (%)   | Прозвище        |
 | :---               |    ---:     |  ---:           |
