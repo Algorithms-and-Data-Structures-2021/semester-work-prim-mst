@@ -26,12 +26,12 @@ int main() {
   string dataset = "01";
   for (int i = 0; i < trials; i++) {
 
-    string line = "1"; // нужна, чтобы прошел первый прогон, так как сначала строка пустая (в следующих операциях точно также)
-      // открываем csv файл (в следующих операциях точно также)
+    string line = "1"; // нужна, чтобы прошел первый прогон, так как сначала строка пустая
+      // открываем csv файл
     auto input_file = ifstream(path + "/" + dataset + "/" + count_of_elements + ".csv");
     getline(input_file, line);
+    //создаем граф с количеством вершин = stoi(line), первая строка в наборе данных - кол-во вершин
     Graph_MST g(stoi(line));
-      // здесь находится участок кода, время которого необходимо замерить
       // заполнение графа
     if (input_file) {
       while (line != "") {
@@ -53,6 +53,7 @@ int main() {
       }
     }
     input_file.close();
+    //замер времени работы алгорита Прима
     const auto time_point_before = chrono::steady_clock::now();
     g.Prim_MinQueue(0);
     const auto time_point_after = chrono::steady_clock::now();
