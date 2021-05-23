@@ -121,20 +121,20 @@ namespace itis {
       }
     }
 
-    std::cout << "print predecessor[]:\n";
-    PrintDataArray(predecessor);
-    std::cout << "print distance[]:\n";
-    PrintDataArray(distance);
-
-    std::cout << std::setw(3) << "v1"
-              << " - " << std::setw(3) << "v2"
-              << " : weight\n";
-    int i = (Start + 1) % num_vertex;
-    while (i != Start) {
-      std::cout << std::setw(3) << predecessor[i] << " - " << std::setw(3) << i << " : " << std::setw(3) << distance[i]
-                << "\n";
-      i = (++i) % num_vertex;
-    }
+//    std::cout << "print predecessor[]:\n";
+//    PrintDataArray(predecessor);
+//    std::cout << "print distance[]:\n";
+//    PrintDataArray(distance);
+//
+//    std::cout << std::setw(3) << "v1"
+//              << " - " << std::setw(3) << "v2"
+//              << " : weight\n";
+//    int i = (Start + 1) % num_vertex;
+//    while (i != Start) {
+//      std::cout << std::setw(3) << predecessor[i] << " - " << std::setw(3) << i << " : " << std::setw(3) << distance[i]
+//                << "\n";
+//      i = (++i) % num_vertex;
+//    }
   }
 
   void Graph_MST::PrintDataArray(std::vector<int> array) {
